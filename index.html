@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+  <title>Sweet Donuts</title>
+
+
+  <meta name="description" content="Loja online de donuts deliciosos e coloridos" />
+
+
+  <link rel="stylesheet" href="styles.css" />
+
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="#">Three Donuts</a>
+      <nav class="nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#produtos">Donuts</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav">☰</button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" hidden>
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#produtos">Donuts</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+
+      <div class="container hero-inner">
+
+        <h1>Donuts fresquinhos e personalizados todos os dias</h1>
+
+        <p>Doces, fofinhos e irresistíveis. Peça agora mesmo!</p>
+        <p>
+          <a class="btn" href="#produtos">Ver sabores</a>
+
+          <a class="btn ghost" href="#contato">Fale Conosco</a>
+
+        </p>
+      </div>
+    </section>
+
+    <section id="sobre" class="container section">
+      <h2>Sobre a Three Donuts</h2>
+      <p>Somos apaixonados por criar donuts artesanais com muito carinho. Utilizamos ingredientes de alta qualidade para garantir sabor e frescor em cada mordida.</p>
+    </section>
+
+    <section id="produtos" class="container section grid">
+
+      <h2>Nossos Donuts</h2>
+
+      <div class="cards">
+
+
+        <article class="card">
+          <img src="" alt="sortidos" />
+          <h3>Donuts sortidos</h3>
+          <p>Uma surpresa cremosa e docinha para alegrar o seu dia.</p>
+          <button class="btn small">Comprar</button>
+        </article>
+
+
+        <article class="card">
+          <img src="" alt="Mirtilo" />
+          <h3>Sonho de mirtilo</h3>
+          <p>Cobertura azul de mirtilo com confeitos coloridos e uma geleia de mirtilo maravilhosa como recheio.</p>
+          <button class="btn small">Comprar</button>
+        </article>
+
+
+        <article class="card">
+          <img src="" alt="Chocolate" />
+          <h3>Donut de chocolate com morango</h3>
+          <p>Glacê de chocolate branco com recheio de chocolate ao leite e morango.</p>
+          <button class="btn small">Comprar</button>
+        </article>
+
+
+        <article class="card">
+          <img src="" alt="Hommer Classic" />
+          <h3>Donut Hommer Classic</h3>
+          <p>Cobertura de chocolate com granulados coloridos.</p>
+          <button class="btn small">Comprar</button>
+        </article>
+
+
+        <article class="card">
+          <img src="" alt="Ovomaltine" />
+          <h3>Donuts de Ovomaltine</h3>
+          <p>Cobertura de chocolate com Ovomaltine por cima e um recheio extremamente cremoso.</p>
+          <button class="btn small">Comprar</button>
+        </article>
+        
+
+        <article class="card">
+          <img src="" alt="Kitkat" />
+          <h3>Donut de Kitkat</h3>
+          <p>Cobertura de chocolate com Kitkat por cima.</p>
+          <button class="btn small">Comprar</button>
+        </article>
+
+
+        <article class="card">
+          <img src="" alt="MM" />
+          <h3>Donut de M&M's</h3>
+          <p>Cobertura de chocolate com M&M's por cima e recheio.</p>
+          <button class="btn small">Comprar</button>
+        </article>
+
+
+      </div>
+    </section>
+
+    <section id="contato" class="container section">
+      <h2>Contato</h2>
+      <form id="contact-form" class="form" novalidate>
+        <label>
+          Nome
+          <input type="text" name="name" required placeholder="Seu nome" />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required placeholder="seu@exemplo.com" />
+        </label>
+
+        <label>
+          Mensagem
+          <textarea name="message" rows="4" required placeholder="Escreva sua mensagem"></textarea>
+        </label>
+
+        <button type="submit" class="btn">Enviar</button>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+
+    <div class="container">
+
+      <p>© <span id="year"></span> Three Donuts. Todos os direitos reservados.</p>
+
+      <a href="https://www.instagram.com/three.donuts05/">Instagram</a>
+
+      <p>Nosso E-mail: Three.Donuts05@gmail.com</p>
+
+      <p class="small">Feito com amor e muito açúcar</p>
+
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>
