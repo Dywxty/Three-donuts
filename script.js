@@ -42,3 +42,46 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+// botão de pagamento
+
+document.addEventListener("DOMContentLoaded", function () {
+    let total = 0;
+    const totalElement = document.getElementById("total-carrinho");
+
+   
+    const botoesComprar = document.querySelectorAll(".card button");
+
+    botoesComprar.forEach(botao => {
+        botao.addEventListener("click", function () {
+            
+            let precoTexto = this.previousElementSibling.textContent
+                .replace("R$", "")
+                .replace(",", ".")
+                .trim();
+
+            let preco = parseFloat(precoTexto);
+
+            if (!isNaN(preco)) {
+                total += preco;
+                totalElement.textContent = `Total: R$ ${total.toFixed(2).replace(".", ",")}`;
+            }
+        });
+    });
+});
+
+document.getElementById("btn-pagar").addEventListener("click", function () {
+    if (total > 0) {
+        alert(`Obrigado pela compra! Total: R$ ${total.toFixed(2).replace(".", ",")}`);
+        total = 0;
+        document.getElementById("total-carrinho").textContent = "Total: R$ 0,00";
+    } else {
+        alert("Seu carrinho está vazio!");
+    }
+});
+
+document.querySelectorAll(".btn-pagamento").forEach(botao => {
+    botao.addEventListener("click", function () {
+        alert(`Forma de pagamento selecionada: ${this.textContent}`);
+    });
+});
+
